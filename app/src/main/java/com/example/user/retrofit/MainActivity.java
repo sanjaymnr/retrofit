@@ -23,15 +23,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Call<List<QuestionModel>> questionModelCall=ApiService.getServiceClass().getAllJavaQuestions();
-        questionModelCall.enqueue(new Callback<List<QuestionModel>>() {
+        Call<List<Modal>> questionModelCall=ApiService.getServiceClass().getAllJavaQuestions();
+        questionModelCall.enqueue(new Callback<List<Modal>>() {
             @Override
-            public void onResponse(Call<List<QuestionModel>> call, Response<List<QuestionModel>> response) {
+            public void onResponse(Call<List<Modal>> call, Response<List<Modal>> response) {
 
             }
 
             @Override
-            public void onFailure(Call<List<QuestionModel>> call, Throwable t) {
+            public void onFailure(Call<List<Modal>> call, Throwable t) {
 
             }
         });

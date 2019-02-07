@@ -9,7 +9,7 @@ import retrofit2.http.GET;
 
 public class ApiService {
 
-    private static final String BASE_URL = "http://192.168.137.1/";
+    private static final String BASE_URL = "http://services.hanselandpetal.com/";
 
     public static RetrofitInterface getServiceClass() {
         return RetrofitAPI.getRetrofit(BASE_URL)
@@ -17,8 +17,8 @@ public class ApiService {
     }
 
     public interface RetrofitInterface {
-        @GET("qrce/java.php")
-        public Call<List<QuestionModel>> getAllJavaQuestions();
+        @GET("feeds/flowers.json")
+        public Call<List<Modal>> getAllJavaQuestions();
     }
 }
 
