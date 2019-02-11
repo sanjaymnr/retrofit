@@ -18,7 +18,7 @@ public class ApiService {
 
     public interface RetrofitInterface {
         @GET("feeds/flowers.json")
-        public Call<List<Modal>> getAllJavaQuestions();
+        public Call<List<Modal>> getAllData();
     }
 }
 
